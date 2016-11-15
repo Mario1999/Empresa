@@ -1,0 +1,56 @@
+/****************************************/
+/* MAIN CSS DE CARRITO DE COMPRA EN PHP */
+/****************************************/
+body{
+	font-family: 'Trebuchet Ms', Verdana, Georgia;
+	font-size: 12px;
+	color: #333;
+	margin:0;
+}
+
+h1{
+	font-size: 18px;
+}
+th{
+	background: #D1D1D1;
+	border: 1px solid white;
+}
+
+#cabecera{
+	background-color: #D1D1D1;
+	height: 100px;
+	text-align:center;
+	padding-top: 40px;
+}
+
+
+#derecha{
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.desc_largo{width: 300px;}
+
+.borde_tabla{border-bottom: 1px solid #D1D1D1;}
+
+input{
+	/*font-family: inherit;*/
+	padding: 5px;
+	/*outline:0;border:none;*/
+}
+
+input[type="button"], input[type="submit"]{
+	/*font-size: 11px;*/
+	font-weight: bold;
+	height: 29px;
+	line-height: 27px;
+	margin: 11px 6px;
+	min-width: 54px;
+	padding: 0 8px;
+	text-align: center;
+	background-color: #F8F8F8;
+	border: 1px solid #C6C6C6;
+	cursor: pointer;
+}
