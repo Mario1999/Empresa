@@ -11,8 +11,7 @@ include("../conexion.php");
     <link href="../style.css" rel="stylesheet" type="text/css" />
     <div id="derecha" class="fondo">
         <h1 class="Estilo1" align="center">Facturacion -- Ferreteria el constructor</h1>
-   
-        <div class='text-border'>
+         <div class='text-border'>
         <?php
            
             if (isset($_GET['id']))

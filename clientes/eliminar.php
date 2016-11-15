@@ -2,7 +2,7 @@
 
 if(!is_numeric($_REQUEST['cod']))
 {
-	echo "Porfavor seleccione el cliente que desea eliminar";
+	echo "<script type='text/javascript'>alert( 'Porfavor seleccione el cliente que desea eliminar' )</script>";
 	exit();
 }
 include("../conexion.php");
@@ -13,6 +13,7 @@ if(mysql_errno()!=0)
 	mysql_close($conexion);
 }else{
 	mysql_close($conexion);
+	echo "<script type='text/javascript'>alert( 'Cliente eliminado exitosamente' )</script>";
 	echo "<script>window.location=\"index.php?num=1\";</script>";
 }
 ?>

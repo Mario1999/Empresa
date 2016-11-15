@@ -26,7 +26,7 @@ function generarCodigo($longitud) {
     <tbody>
       <tr>
         <td align="right">&nbsp;</td>
-        <td><a href="index.php?num=1">VOLVER AL INICIO</a></td>
+        <td><a href="index.php?num=1"><img src="../logos/volver.png"></a></td>
         <td>&nbsp;</td>
       </tr>
       <tr>

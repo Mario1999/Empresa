@@ -19,23 +19,20 @@ if (!$conexion){
     echo "no se pudo establecer conexion con el servidor mysql";
 }else{
  
-   $sql_query="insert into factura values ('$codigo','$nombre', '$direccion','$rtn', '$fecha','$coste','$totalcoste', '$impuesto', '$descuento','$total' )";
+   $sql_query="insert into factura values ('$codigo','$nombre', '$direccion','$rtn', '$fecha','$totalcoste', '$impuesto', '$descuento','$total' )";
    mysql_query($sql_query,$conexion);
  
     for ($i=0,$s=count($producto);$i<$s;$i++) {
-      $sql_query_updatestock="UPDATE productos SET existencias = existencias - {$x[$i]} WHERE LOWER(nombre) = LOWER('{$producto[$i]}') ";
+       $sql_query_updatestock="UPDATE productos SET existencias = existencias - {$x[$i]} WHERE LOWER(nombre) = LOWER('{$producto[$i]}') ";
         $sql_query1="insert into detalle values ('{$codigo}', '{$x[$i]}','{$producto[$i]}','{$preciov[$i]}')";
         if (mysql_query($sql_query1,$conexion)) {
           mysql_query($sql_query_updatestock,$conexion);
-		  $sql_query_updatestock="UPDATE productos SET existencias = existencias - {$x[$i]} WHERE nombre = '{$producto[$i]}' ";
-        }
-		
-		
-		
-    }
-//echo "Su compra fue exitosa";
-//echo "<script>window.location=\"../index.php?num=1\"</script>";
-    }?>
+		  }
+		  }
+      
+echo "<script type='text/javascript' title='Ferreteria la construccion'>alert ('Su compra fue exitosa, Gracias por preferirnos!!!')</script>";
+echo "<script>window.location=\"../index.php?num=1\"</script>";
+   } ?>
 <?php
 include("estructura/pie.php");
 include("estructura/cerrar_etiquetas.php");

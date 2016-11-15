@@ -1,5 +1,5 @@
 <?php
-include("../verificar_sesion.php");
+include("verificar_sesion.php");
 ?>
 <?php
   include("../conexion.php");
@@ -45,7 +45,7 @@ $rst_clientes=mysql_query("SELECT * FROM clientes where nombre=nombre ".$filtro.
 <html>
 <head>
 <meta charset="utf-8">
-<title>Proyecto 4</title>
+<title>Clientes -- Ferreteria el constructor</title>
 <link rel="stylesheet" href="../style.css" type="text/css">
 </head>
 

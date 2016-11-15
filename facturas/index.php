@@ -1,5 +1,5 @@
 <?php
-include("../verificar_sesion.php")
+include("verificar_sesion.php")
 ?>
 <?php
   include("../conexion.php");
@@ -45,7 +45,7 @@ $rst_factura=mysql_query("SELECT * FROM factura where cliente=cliente ".$filtro.
 <html>
 <head>
 <meta charset="utf-8">
-<title>Proyecto 4</title>
+<title>Facturas -- Ferreteria el constructor</title>
 <link rel="stylesheet" href="../style.css" type="text/css">
 </head>
 
@@ -81,7 +81,6 @@ $rst_factura=mysql_query("SELECT * FROM factura where cliente=cliente ".$filtro.
       <td width="58">Direccion</td>
       <td width="64">RTN</td>
       <td width="90">Fecha</td>    
-      <td width="42">Pago</td>
       <td width="77">Subtotal</td>
       <td width="81">Impuesto</td>
       <td width="87">Descuento</td>
@@ -98,7 +97,7 @@ $rst_factura=mysql_query("SELECT * FROM factura where cliente=cliente ".$filtro.
       <td><?php echo $fila["direccion"];?></td>
       <td><?php echo $fila["rtn"];?></td>
       <td><?php echo $fila["fecha"];?></td>
-      <td><?php echo $fila["pago"];?></td>
+      
       <td><?php echo $fila["subtotal"];?></td>
       <td><?php echo $fila["impuesto"];?></td>
       <td><?php echo $fila["descuento"];?></td>

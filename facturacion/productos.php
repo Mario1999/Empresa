@@ -3,7 +3,8 @@ session_start();
 
 $titulo = "Facturacion";
 include("../conexion.php");
-
+include("estructura/meta_tags.php");
+include("estructura/cabecera.php");
 
 //include("izquierda.php");
 ?>

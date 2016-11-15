@@ -7,7 +7,7 @@ include("verificar_sesion.php");
 <html>
 <head>
 <meta charset="utf-8">
-<title>Proyecto 4</title>
+<title>Pagina principal -- Ferreteria el constructor</title>
 <link rel="stylesheet" href="style.css" type="text/css">
 <link href="style.css" rel="stylesheet" type="text/css"></head>
 </html>
@@ -44,10 +44,6 @@ include("verificar_sesion.php");
 </p>
   <p align="center">Sistema desarrollado por </p>
   <p align="center"><font color="red">Mario Jose Portillo Aguilar </font></p>
-  <p align="center"><font color="red">Allan Josue Aquino Gabarrete </font></p>
-  <p align="center"><font color="red">Luis Alonso Linares </font></p>
-  <p align="center"><font color="red">Victor Manuel Rodriguez</font></p>
-  <p align="center"><font color="red">Carlos Daniel Carcamo Santos</font></p>
   <p align="center"></p>
   <p align="center">3-1 BTP1 2016 <font color="red">I.O.J.H.</font></p>
   <p>&nbsp;</p>

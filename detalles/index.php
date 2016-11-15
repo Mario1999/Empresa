@@ -1,5 +1,5 @@
 <?php
-include("../verificar_sesion.php")
+include("verificar_sesion.php")
 ?>
 <?php
   include("../conexion.php");
@@ -14,7 +14,7 @@ $rst_detalle=mysql_query("select * from detalle where codfact=".$_REQUEST['num']
 <html>
 <head>
 <meta charset="utf-8">
-<title>Proyecto 4</title>
+<title>Factura # <?php echo $_REQUEST['num'];?> -- <?php echo $fila_factura["cliente"];?></title>
 <link rel="stylesheet" href="../style.css" type="text/css">
 </head>
 
@@ -136,7 +136,7 @@ $rst_detalle=mysql_query("select * from detalle where codfact=".$_REQUEST['num']
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>Descuento:</td>
-      <td><?php echo $fila_factura["pago"];?> Lps.</td>
+      <td><?php echo $fila_factura["descuento"];?> Lps.</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
